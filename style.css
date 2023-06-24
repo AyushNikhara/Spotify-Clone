@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 60px;
+    color: white;
+}
+
+nav ul li {
+    padding-left: 15px;
+}
+
+#loginButton {
+    margin-left: 75%;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+
+.logo img {
+    width: 45px;
+    padding: 0 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 120vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 3%;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    margin: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 8px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+.songitemcontainer {
+    margin-top: 50px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+
+.timestamp {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media(max-width: 1028px) {
+    #masterSongName {
+        font-size: 15px;
+    }
+
+    .songInfo img {
+        width: 40px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .icons {
+        font-size: 10px;
+    }
+
+    #masterSongName {
+        font-size: 12px;
+    }
+
+    .songInfo img {
+        width: 40px;
+    }
+
+}
